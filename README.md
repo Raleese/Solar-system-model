@@ -1,5 +1,8 @@
 Solar System Model (Pygame)
 
+<img width="1979" height="1385" alt="image" src="https://github.com/user-attachments/assets/e2a7fb65-fb65-4c92-ae94-513d8a019737" />
+
+
 A simple interactive solar system visualization built with Python and Pygame.
 It renders:
 - A sun at the center of the world
