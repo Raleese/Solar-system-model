@@ -4,6 +4,7 @@ from star import Star
 from planet import Planet
 
 pygame.init()
+myfont = pygame.font.SysFont("Consolas", 15)
 
 screen = pygame.display.set_mode((1000, 700))
 pygame.display.set_caption("Solar System Model")
@@ -81,11 +82,14 @@ while running:
 
     screen_x = sun_world_x - camera_x
     screen_y = sun_world_y - camera_y
-    
+
     pygame.draw.circle(screen, "yellow", (screen_x, screen_y), 25*CURRENT_ZOOM)
 
     for planet in planets:
         planet.draw(screen, sun_world_x, sun_world_y, CURRENT_ZOOM, camera_x, camera_y)
+        label = myfont.render(planet.name, True, "white")
+        label_rect = label.get_rect(center=(planet.screen_x, planet.screen_y - 20))
+        screen.blit(label, label_rect)
 
     pygame.display.flip()
     clock.tick(60)
