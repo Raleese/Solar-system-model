@@ -13,8 +13,8 @@ class Planet:
 
     def draw(self, screen, sun_world_x, sun_world_y, zoom, camera_x=0, camera_y=0):
         self.angle += self.orbital_period
-        planet_world_x = sun_world_x + math.cos(self.angle) * self.distance_from_sun
-        planet_world_y = sun_world_y + math.sin(self.angle) * self.distance_from_sun
+        planet_world_x = sun_world_x + math.cos(-self.angle) * self.distance_from_sun
+        planet_world_y = sun_world_y + math.sin(-self.angle) * self.distance_from_sun
 
         sun_screen_x = sun_world_x - camera_x
         sun_screen_y = sun_world_y - camera_y
