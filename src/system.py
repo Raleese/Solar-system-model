@@ -16,7 +16,7 @@ running = True
 SCROLL_SPEED = 5
 SCROLL_SPEED_SLOW = 1
 
-MIN_ZOOM = 0.5
+MIN_ZOOM = 0.2
 MAX_ZOOM = 3
 CURRENT_ZOOM = 1
 ZOOM_FACTOR = 0.1
@@ -34,7 +34,8 @@ stars = []
 for i in range(1500):
     posX = random.randint(0, 8000)
     posY = random.randint(0, 8000)
-    stars.append(Star("lightgray", 2, posX, posY))
+    size = random.randint(1, 4)
+    stars.append(Star("lightgray", size, posX, posY))
 
 planets = [
     Planet("Mercury", "gray", 5, 110, 0.02),
