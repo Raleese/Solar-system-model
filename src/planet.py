@@ -22,8 +22,8 @@ class Planet:
         # Apply zoom to the planet's orbital offset from the sun.
         offset_x = (planet_world_x - sun_world_x) * zoom
         offset_y = (planet_world_y - sun_world_y) * zoom
-        planet_screen_x = sun_screen_x + offset_x
-        planet_screen_y = sun_screen_y + offset_y
+        self.screen_x = sun_screen_x + offset_x
+        self.screen_y = sun_screen_y + offset_y
 
         pygame.draw.circle(
             screen,
@@ -32,4 +32,4 @@ class Planet:
             int(self.distance_from_sun * zoom),
             1
         )
-        pygame.draw.circle(screen, self.color, (int(planet_screen_x), int(planet_screen_y)), int(self.radius * zoom))
+        pygame.draw.circle(screen, self.color, (int(self.screen_x), int(self.screen_y)), int(self.radius * zoom))
