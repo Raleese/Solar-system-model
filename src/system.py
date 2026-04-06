@@ -37,14 +37,14 @@ for i in range(1500):
     stars.append(Star("lightgray", 2, posX, posY))
 
 planets = [
-    Planet("Mercury", "gray", 5, 50, 0.02),
-    Planet("Venus", "orange", 8, 100, 0.015),
-    Planet("Earth", "blue", 10, 150, 0.01),
-    Planet("Mars", "red", 7, 200, 0.008),
-    Planet("Jupiter", "brown", 20, 300, 0.005),
-    Planet("Saturn", "yellow", 18, 400, 0.003),
-    Planet("Uranus", "lightblue", 15, 500, 0.002),
-    Planet("Neptune", "darkblue", 15, 600, 0.001)
+    Planet("Mercury", "gray", 5, 110, 0.02),
+    Planet("Venus", "orange", 8, 170, 0.015),
+    Planet("Earth", "blue", 10, 230, 0.01),
+    Planet("Mars", "red", 7, 300, 0.008),
+    Planet("Jupiter", "brown", 20, 410, 0.005),
+    Planet("Saturn", "yellow", 18, 520, 0.003),
+    Planet("Uranus", "lightblue", 15, 640, 0.002),
+    Planet("Neptune", "darkblue", 15, 760, 0.001)
 ]
 
 
@@ -83,7 +83,7 @@ while running:
     screen_x = sun_world_x - camera_x
     screen_y = sun_world_y - camera_y
 
-    pygame.draw.circle(screen, "yellow", (screen_x, screen_y), 25*CURRENT_ZOOM)
+    pygame.draw.circle(screen, "yellow", (screen_x, screen_y), 75*CURRENT_ZOOM)
 
     for planet in planets:
         planet.draw(screen, sun_world_x, sun_world_y, CURRENT_ZOOM, camera_x, camera_y)
