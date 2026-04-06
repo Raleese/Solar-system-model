@@ -1,6 +1,6 @@
 Solar System Model (Pygame)
 
-<img width="1987" height="1392" alt="image" src="https://github.com/user-attachments/assets/ae63899c-3bd5-448c-9525-c8b5a2fbccbf" />
+https://s5.ezgif.com/tmp/ezgif-5cdc0e474548a960.gif
 
 A simple interactive solar system visualization built with Python and Pygame.
 It renders:
