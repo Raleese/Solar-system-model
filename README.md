@@ -2,7 +2,7 @@
 
 A simple interactive solar system visualization built with Python and Pygame.
 
-## Demonstratoon
+## Demonstration
 
 ![planets gif](https://github.com/user-attachments/assets/d7fabc87-fcfb-4140-8ba7-9e315a586555)
 
