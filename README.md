@@ -1,30 +1,35 @@
-Solar System Model (Pygame)
+## Solar System Model (Pygame)
+
+A simple interactive solar system visualization built with Python and Pygame.
+
+## Demonstratoon
 
 ![planets gif](https://github.com/user-attachments/assets/d7fabc87-fcfb-4140-8ba7-9e315a586555)
 
-A simple interactive solar system visualization built with Python and Pygame.
+## Explanation
+
 It renders:
 - A sun at the center of the world
 - Multiple planets orbiting the sun
 - Orbit rings for each planet
 - A starfield background with slower camera movement for a parallax effect
 
-Features
+## Features
 - Real-time orbit animation
 - Camera movement with WASD
 - Mouse-wheel zoom in and out
 - Zoom-aware planet distances and orbit circles
 
-Project Structure
+## Project Structure
 - src/system.py: Main loop, input handling, camera, rendering order
 - src/planet.py: Planet orbit math and drawing
 - src/star.py: Background star rendering
 
-Requirements
+## Requirements
 - Python 3.9+
 - pygame
 
-Setup
+## Setup
 1. Create a virtual environment (optional but recommended):
 	python -m venv venv
 2. Activate it:
@@ -36,7 +41,7 @@ Run
 From the Solar-system-model folder:
 python src/system.py
 
-Controls
+## Controls
 - W: Move camera up
 - A: Move camera left
 - S: Move camera down
@@ -45,6 +50,6 @@ Controls
 - Mouse wheel down: Zoom out
 - Close window: Exit simulation
 
-Notes
+## Notes
 - Zoom is clamped to a min and max range to keep rendering stable.
 - Stars use a slower camera offset than planets/sun to create depth.
